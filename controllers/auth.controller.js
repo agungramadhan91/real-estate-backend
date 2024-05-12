@@ -53,6 +53,7 @@ export const login = async (req, res) => {
 			{
 				// pass user information, you can sent anything you want
 				id: user.id,
+				isAdmin: false,
 			},
 			process.env.JWT_SECRET,
 			{
